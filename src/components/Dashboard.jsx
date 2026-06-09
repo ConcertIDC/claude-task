@@ -21,7 +21,7 @@ export default function Dashboard() {
   );
 
   const income = money
-    .filter((e) => e.type === 'income' && type != 'income')
+    .filter((e) => e.type === 'income')
     .reduce((s, e) => s + e.amount, 0);
   const expense = money
     .filter((e) => e.type === 'expense')
